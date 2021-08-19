@@ -35,3 +35,12 @@ Please, send us a single compressed archive which includes:
 3. **Source of your scripts/code**. Please include detailed comments in your source code. This will help us better understand your code.
 
 **Don't send VCF output files!**
+
+## Evaluation
+
+The following will be evaluated:
+1. The tool can be easily installed and run.
+2. The tool uses data structures and algorithms adequate for the problem and has reasonable running time and memory usage.
+3. All requested INFO fields are present in the final output VCF files.
+4. Values in the requested INFO fields in the final output VCF files are correct.
+
