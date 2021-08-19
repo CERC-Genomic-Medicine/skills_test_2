@@ -18,7 +18,7 @@ Given a list of genetic variants in compressed Variant Call Format (VCF) files (
 
 The command-line tool must write results to the compressed VCF file. Specifically, for each genetic variant the following key-value pairs must be written into the `INFO` field:
 1. `GENES_IN` - comma-separated list of identifiers (`gene_id` key from GENCODE GTF) of overlapping genes. If there are no overlapping genes, the empty value must be denoted with `.` symbol i.e. `GENES_IN=.`.
-2. `GENES_200KB` - comma-separated list of identifiers (`gene_id` key from GENCODE GTF) of genes which are within +/-200000 base pairs from the variant. If there are no overlapping genes, the empty value must be denoted with `.` symbol i.e. `GENES_200KB=.`.
+2. `GENES_200KB` - comma-separated list of identifiers (`gene_id` key from GENCODE GTF) of genes which are within +/-200000 base pairs from the variant. If there are no such genes, the empty value must be denoted with `.` symbol i.e. `GENES_200KB=.`. `GENES_200KB` is a superset of `GENES_IN`.
 3. `GENE_NEAREST` - identifier (`gene_id` key from GENCODE GTF) of the nearest gene. If `GENE_IN` is not empty, then `GENE_NEAREST` must be empty. Empty value must be denoted with `.` symbol i.e. `GENE_NEAREST=.`.
 An example of the output file can be found in `output/example.vcf.gz`.
 
