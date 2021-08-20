@@ -40,7 +40,7 @@ Please, send us a single compressed archive which includes:
 
 The following will be evaluated:
 1. The tool can be easily installed and run.
-2. The tool uses data structures and algorithms adequate for the problem and has reasonable running time and memory usage.
+2. The tool uses data structures and algorithms adequate for the problem i.e. ensure reasonable running time and memory usage.
 3. All requested INFO fields are present in the final output VCF files.
 4. Values in the requested INFO fields in the final output VCF files are correct.
 
